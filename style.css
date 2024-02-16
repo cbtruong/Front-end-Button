@@ -1,0 +1,392 @@
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.distance{
+    position: relative;
+    margin: 10px;
+}
+/*button one*/
+
+.btn-one .btn{
+    display:inline-block;
+    padding:15px 30px;
+    color:rgb(190, 78, 78);
+    background-color: transparent;
+    border:none;
+    outline: none;
+    font-weight: 600;
+}
+.btn-one .btn:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:0px;
+    background-color: #c1bceb;
+    z-index:-1;
+    transition: width 1s ease-in;
+}
+.btn-one .btn:hover:before{
+    width:100%;
+}
+
+/*----------------------------button two------------------------------*/
+.btn-two .btn{
+    display:inline-block;
+    padding:15px 30px;
+    color:rgb(190, 78, 78);
+    background-color: transparent;
+    border:none;
+    outline: none;
+    font-weight: 600;
+}
+.btn-two .btn:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translate(-50%,0);
+    height:100%;
+    width:0px;
+    background-color: #c1bceb;
+    z-index:-1;
+    transition: width 0.5s linear;
+}
+.btn-two .btn:hover:before{
+    width:100%;
+}
+/*----------------------------button three------------------------------*/
+.btn-three .btn{
+    display:inline-block;
+    padding:15px 30px;
+    color:rgb(190, 78, 78);
+    background-color: transparent;
+    border:none;
+    outline: none;
+    font-weight: 600;
+}
+.btn-three .btn:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    height:0px;
+    width:2px;
+    background-color: #c1bceb;
+    z-index:-1;
+    transition: height 1s ease-in,width 0.5s ease-in-out 0.5s;
+}
+.btn-three .btn:hover:before{
+    height:100%;
+    width:100%;
+}
+/*---------------------------------------------------------------------*/
+/*----------------------------button four------------------------------*/
+/*---------------------------------------------------------------------*/
+.btn-four .btn{
+    display:inline-block;
+    padding:15px 30px;
+    color:rgb(190, 78, 78);
+    background-color: transparent;
+    border:none;
+    outline: none;
+    font-weight: 600;
+}
+.btn-four span{
+    position:absolute;
+    background-color:#c1bceb;
+    display: block;
+    transition: all 0.2s linear;
+}
+.btn-four span:nth-child(1){
+    top: 0;
+    left:0;
+    width: 0px;
+    height: 2px;
+    
+}
+.btn-four span:nth-child(2){
+    top: 0;
+    right:0;
+    width: 2px;
+    height: 0px;
+    z-index: -1;
+    transition-delay: 0.2s;
+}
+.btn-four span:nth-child(3){
+    bottom: 0;
+    right:0;
+    width: 0px;
+    height: 2px;
+    z-index: -1;
+    transition-delay: 0.4s;
+}
+.btn-four span:nth-child(4){
+    bottom: 0;
+    left:0;
+    width: 2px;
+    height: 0px;
+    z-index: -1;
+    transition-delay: 0.6s;
+}
+.btn-four:hover span:nth-child(odd){
+    width: 100%;
+}
+.btn-four:hover span:nth-child(even){
+    height: 100%;
+}
+.btn-four .btn:before{
+    content:"";
+    position: absolute;
+    left:0;
+    top: 0;
+    height:100%;
+    z-index:-1;
+    width:0px;
+    background-color: #c1bceb;
+    transition:width 1s linear 0.8s;
+}
+.btn-four .btn:hover:before{
+    width: 100%;
+}
+/*---------------------------------------------------------------------*/
+/*----------------------------button five------------------------------*/
+/*---------------------------------------------------------------------*/
+.btn-five .btn {
+    height: 2.8em;
+    width: 9em;
+    background: transparent;
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+    border: 2px solid #016DD9;
+    outline: none;
+    color: #016DD9;
+    font-size: 17px;
+   }
+   
+   .btn-five .btn:hover {
+    background: #016DD9;
+    color: #ffffff;
+    animation: squeeze3124 0.9s both;
+   }
+   
+   @keyframes squeeze3124 {
+    0% {
+     -webkit-transform: scale3d(1, 1, 1);
+     transform: scale3d(1, 1, 1);
+    }
+   
+    30% {
+     -webkit-transform: scale3d(1.25, 0.75, 1);
+     transform: scale3d(1.25, 0.75, 1);
+    }
+   
+    40% {
+     -webkit-transform: scale3d(0.75, 1.25, 1);
+     transform: scale3d(0.75, 1.25, 1);
+    }
+   
+    50% {
+     -webkit-transform: scale3d(1.15, 0.85, 1);
+     transform: scale3d(1.15, 0.85, 1);
+    }
+   
+    65% {
+     -webkit-transform: scale3d(0.95, 1.05, 1);
+     transform: scale3d(0.95, 1.05, 1);
+    }
+   
+    75% {
+     -webkit-transform: scale3d(1.05, 0.95, 1);
+     transform: scale3d(1.05, 0.95, 1);
+    }
+   
+    100% {
+     -webkit-transform: scale3d(1, 1, 1);
+     transform: scale3d(1, 1, 1);
+    }
+   }
+/*---------------------------------------------------------------------*/
+/*----------------------------button six------------------------------*/
+/*---------------------------------------------------------------------*/
+   .btn-six .btn {
+    position: relative;
+    margin: 0;
+    padding: 17px 35px;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 1px solid rgba(22, 76, 167, 0.6);
+    border-radius: 10px;
+    color: #1d89ff;
+    font-weight: 400;
+    font-family: inherit;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  }
+  
+  .btn-six .btn span {
+    color: #164ca7;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+  }
+  
+  .btn-six .btn:hover {
+    animation: rotate624 0.7s ease-in-out both;
+  }
+  
+  .btn-six .btn:hover span {
+    animation: storm1261 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+  }
+  
+  @keyframes rotate624 {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  
+    25% {
+      transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+  
+    50% {
+      transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+  
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+  
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes storm1261 {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+  
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+  
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+  
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  }
+  
+  .btn-six .btn {
+    border: 1px solid;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .btn-six .btn span {
+    z-index: 20;
+  }
+  
+  .btn-six .btn:after {
+    background: #38ef7d;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: 0.4;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+  }
+  
+  .btn-six .btn:hover:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+/*---------------------------------------------------------------------*/
+/*----------------------------button six------------------------------*/
+/*---------------------------------------------------------------------*/
+  .btn-seven {
+    display: flex;
+    padding: 15px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #183153;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: none;
+   }
+   
+   .btn-seven:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #FFD401;
+    position: absolute;
+    transition: all 1s ease-in-out;
+    top: 0;
+    right: 0;
+    z-index: 1;
+   }
+   
+   .btn-seven:hover:after {
+    right: auto;
+    left: 0;
+    width: 100%;
+   }
+   
+   .btn-seven .btn {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 0.7em;
+    z-index: 20;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   .btn-seven:hover .btn {
+    color: #183153;
+    animation: scaleUp 0.3s ease-in-out;
+    z-index: 100;
+   }
+   
+   @keyframes scaleUp {
+    0% {
+     transform: scale(1);
+    }
+   
+    50% {
+     transform: scale(0.95);
+    }
+   
+    100% {
+     transform: scale(1);
+    }
+   }
+   
